@@ -105,7 +105,7 @@ export default function Home() {
           opacity: 1;
           transform: scale(0.5);
           transition: all 0.3s ease;
-          font-size: 1.5rem;
+          font-size: 1.75rem;
         }
 
         /* Close button */
@@ -125,10 +125,6 @@ export default function Home() {
         .popup.show .popup-content {
           opacity: 1;
           transform: scale(1);
-        }
-
-        .popup-content p {
-          width: 130vw !important;
         }
 
         /* Style the button to trigger popup */
