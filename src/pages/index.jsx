@@ -105,7 +105,7 @@ export default function Home() {
           opacity: 1;
           transform: scale(0.5);
           transition: all 0.3s ease;
-          font-size: 1.6rem;
+          font-size: 1.5rem;
         }
 
         /* Close button */
