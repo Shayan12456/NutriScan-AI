@@ -33,3 +33,4 @@ coverage/
 
 # Miscellaneous
 *.local
+package-lock.json
