@@ -53,13 +53,14 @@ function fileToGenerativePart(buffer, mimeType) {
 
     const imagePart = fileToGenerativePart(imageBuffer, "image/jpeg");//buffer to format needed for AI input
   
-    const prompt = `REPLY WITH EVERYTHING ASKED IN HTML IS A MUST, NEVER REPLY WITH
+    const prompt = `REPLY AS WEB APP RESPONSE, HTML RESPONSE IS MUST, NO HEADING TAGS, NO H3 H2 H1. JUST BOLD HEADINGS. LINE BREAK AFTER EACH PARAMETER.
+    HEADINGS JUST AS SIMPLE TEXT .REPLY WITH EVERYTHING ASKED IN HTML IS A MUST, NEVER REPLY WITH
     THAT SOMETHING IS NOT MENTIONED ON THE PACKAGE YOUR DUTY IS TO REPLY BASED ON YOUR CONSIDERATION, 
     JUST REPLY WITH THE DIRECT INFORMATION, NOTHING EXTRA AS YOUR RESPONSE IS 
     SEEN BY USERS IN AN APP SO YOUR CHAT LIKE EXTRA RESPONSE SOUNDS UNREAL: STRICTLY DO NOT GIVE ANY DISCLAIMERS
     health % overall based on several important health parameters according to you, benefits according to you,
     disadvantages according to you, precautions according to you, who should strictly avoid according to you and % of cholesterol, protein, vitamins etc.
-    GIVE YOUR RESPONSE IN HEADINGS, IF YOU FOUND IMAGE AS NOT CLEAR OR IRRELEVANT SO REPLY WITH 'UPLOAD CLEAR IMAGE' OR 'UPLOAD RELEVANT IMAGE'. WHEN GIVING RESPONSE FOR ALL DATA UNDER HEADING 
+  , IF YOU FOUND IMAGE AS NOT CLEAR OR IRRELEVANT SO REPLY WITH 'UPLOAD CLEAR IMAGE' OR 'UPLOAD RELEVANT IMAGE'. WHEN GIVING RESPONSE FOR ALL DATA UNDER HEADING 
     IF THERE ARE BULLET POINTS KINDLY ASSIGN NUMBER TO BULLETS. GIVE RESULT IN HTML and response other than html should not exceed more than 80 words`; // Your AI prompt here
   
     try {
@@ -88,7 +89,7 @@ function fileToGenerativePart(buffer, mimeType) {
         
         // Generate AI response using the Cloudinary URL
         const response = await aiResponse(result.secure_url);//string response
-
+        // console.log(response)
         // Send back the AI response
         res.status(200).json({ response });
       } catch (error) {

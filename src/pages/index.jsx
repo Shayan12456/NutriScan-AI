@@ -74,7 +74,7 @@ export default function Home() {
         <div id="myPopup" className="popup">
           <div className="popup-content">
             <button className="close-btn" onClick={() => {setPopupVisible(false);}}>X</button>
-            <p style={{width: "130vw"}} dangerouslySetInnerHTML={{ __html: response }} />
+            <p dangerouslySetInnerHTML={{ __html: response }} />
           </div>
         </div>
       )}
@@ -125,6 +125,10 @@ export default function Home() {
         .popup.show .popup-content {
           opacity: 1;
           transform: scale(1);
+        }
+
+        .popup-content p {
+          width: 130vw !important;
         }
 
         /* Style the button to trigger popup */
