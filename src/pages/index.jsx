@@ -74,7 +74,7 @@ export default function Home() {
         <div id="myPopup" className="popup">
           <div className="popup-content">
             <button className="close-btn" onClick={() => {setPopupVisible(false);}}>X</button>
-            <p dangerouslySetInnerHTML={{ __html: response }} />
+            <p style={{width: "130vw"}} dangerouslySetInnerHTML={{ __html: response }} />
           </div>
         </div>
       )}
@@ -119,7 +119,6 @@ export default function Home() {
           cursor: pointer;
           border-radius: 50%;
           padding: 5px 10px;
-          width: 130vw;
         }
 
         /* Show the popup with animation */
