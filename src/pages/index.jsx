@@ -5,7 +5,6 @@ export default function Home() {
   const [response, setResponse] = useState('');
   const [loading, setLoading] = useState(false);
   const [popupVisible, setPopupVisible] = useState(false); // State to control popup visibility
-  const [fontSize, setFontSize] = useState('1.6rem'); // Default font size
   const handleFileChange = (e) => {
     setFile(e.target.files[0]);
   };
