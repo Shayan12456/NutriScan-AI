@@ -119,6 +119,7 @@ export default function Home() {
           cursor: pointer;
           border-radius: 50%;
           padding: 5px 10px;
+          width: 130vw;
         }
 
         /* Show the popup with animation */
