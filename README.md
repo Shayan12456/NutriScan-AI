@@ -10,7 +10,6 @@ NutriScan AI is an open-source project that leverages the power of artificial in
 - [License](#license)
 - [Acknowledgments](#acknowledgments)
 - [Contact](#contact)
-- [Summary](#summary)
 
 ## Features
 
@@ -76,8 +75,3 @@ I would like to acknowledge the following for their contributions to NutriScan A
 
 ## Contact
 - Email: shayan.developer12@gmail.com
-
-
-### Summary:
-- The **Table of Contents** at the beginning enhances usability by allowing users to quickly navigate to specific sections.
-- Feel free to tweak any other parts to better suit your project!
